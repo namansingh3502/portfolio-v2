@@ -34,8 +34,13 @@ const LinkButton = () => {
     <>
       {icons.map((item ) => {
         return (
-          <a href={item.profile} key={item.id}>
-            <img className="h-12 align-middle mr-6" src={item.icon} alt={item.tag} />
+          <a
+            href={item.profile} key={item.id}
+            data-aos="flip-left"
+            data-aos-delay="200"
+            data-aos-duraion="800"
+          >
+            <img className="h-10 align-middle mr-6" src={item.icon} alt={item.tag} />
           </a>
         )
       }
@@ -50,7 +55,12 @@ export default function Profile (){
   return(
     <section className="min-h-screen flex place-self-center">
       <div className="grid grid-cols-6 md:gap-5 lg:gap-12 text-white">
-        <div className="col-start-1 col-span-6 sm:col-start-2 sm:col-span-4 md:col-start-2 md:col-span-2 lg:col-start-2 lg:col-span-2 place-self-center">
+        <div
+          className="col-start-1 col-span-6 sm:col-start-2 sm:col-span-4 md:col-start-2 md:col-span-2 lg:col-start-2 lg:col-span-2 place-self-center"
+          data-aos="fade-right"
+          data-aos-easing="linear"
+          data-aos-duration="500"
+        >
             <StaticImage
               className="flex flex-row object-contain mx-3"
               src="../images/pic.png"
@@ -58,6 +68,11 @@ export default function Profile (){
             />
         </div>
         <div className="col-start-2 col-span-5 sm:col-start-3 sm:col-span-3 md:col-start-4 md:col-span-3 text-3xl md:text-4xl lg:text-5xl xl:text-7xl self-center font-serif">
+          <div
+            data-aos="fade-left"
+            data-aos-easing="linear"
+            data-aos-duration="500"
+          >
             <div className="flex flex-row">
               <h1>
                 Hello there
@@ -76,8 +91,8 @@ export default function Profile (){
                   }}
                 >Naman Singh</span>
               </h1>
-
             </div>
+          </div>
             <div className="flex flex-row mx-auto mt-8 h-10">
             <LinkButton />
             </div>
