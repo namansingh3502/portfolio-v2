@@ -7,28 +7,32 @@ import Profile from "../components/profile";
 import AboutMe from "../components/aboutme";
 import Backpack from "../components/backpack";
 
-AOS.init();
 
 // markup
-const IndexPage = () => {
+class IndexPage extends React.Component{
 
-  return (
-    <>
-      <Helmet>
-        <html lang='en' />
-        <title>Naman Singh</title>
-        <meta name='description' content="Naman Singh's Portfolio"  />
-      </Helmet>
-      <main>
-        <div className="container mx-auto px-2">
-          <Profile/>
-          <AboutMe/>
-          <Backpack/>
-        </div>
+  componentDidMount(){
+    AOS.init();
+  };
+  render(){
+    return (
+      <>
+        <Helmet>
+          <html lang='en' />
+          <title>Naman Singh</title>
+          <meta name='description' content="Naman Singh's Portfolio"  />
+        </Helmet>
+        <main>
+          <div className="container mx-auto px-2">
+            <Profile/>
+            <AboutMe/>
+            <Backpack/>
+          </div>
 
-      </main>
-    </>
-  )
+        </main>
+      </>
+    )
+  }
 }
 
 export default IndexPage
