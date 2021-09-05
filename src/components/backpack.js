@@ -132,36 +132,36 @@ const Backpack = () => {
 
       <div className="grid grid-cols-3 lg:ml-10 xl:ml-0 px-6 lg:px-4 mt-4 text-white">
         <div className="col-start-1 col-span-3 xl:col-span-1 px-3 sm:ml-3 md:ml-0 md:pl-0">
-          <h3
+          <h1
             className="self-center text-center text-4xl mb-8 mt-4 font-bold"
             style={heading}
             data-aos="flip-up"
             data-aos-duration="500"
           >
             Languages
-          </h3>
+          </h1>
           <Icon data={languages}/>
         </div>
         <div className="col-start-1 col-span-3 xl:col-start-2 xl:col-span-1">
-          <h3
+          <h1
             className="self-center text-center text-4xl mb-8 mt-4 font-bold"
             style={heading}
             data-aos="flip-up"
             data-aos-duration="500"
           >
             Libraries & Frameworks
-          </h3>
+          </h1>
             <Icon data={framework}/>
         </div>
         <div className="col-start-1 col-span-3 xl:col-starts-3 xl:col-span-1 xl:px-8">
-          <h3
+          <h1
             className="self-center text-center text-4xl mb-8 mt-4 font-bold"
             style={heading}
             data-aos="flip-up"
             data-aos-duration="500"
           >
             Tools & Others
-          </h3>
+          </h1>
           <Icon data={tools}/>
         </div>
       </div>
