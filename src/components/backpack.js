@@ -83,7 +83,7 @@ const Icon = (props) => {
       {data.map((item,index) => {
         return(
           <li
-            className="my-3 py-2 h-28"
+            className="my-4 py-2 h-34"
             key={index}
             data-aos="fade-up"
             data-aos-duration="400"
@@ -106,7 +106,7 @@ const Icon = (props) => {
 
 const Backpack = () => {
   return(
-    <section>
+    <section className="pb-48">
       <div className="py-4 text-4xl md:text-5x lg:text-6xl xl:text-7xl font-serif">
         <div
           className="text-white text-center font-semibold pb-4"
