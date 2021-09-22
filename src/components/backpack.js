@@ -61,12 +61,17 @@ const tools = [
   {
     icon:"devicon-github-original",
     name:"Github",
-    text:"Place where you can find my OSS projects."
+    text:"Place where you can find my projects."
   },
   {
     icon:"devicon-ubuntu-plain colored",
     name:"Ubuntu",
     text:"My favourite Operating System."
+  },
+  {
+    icon:"devicon-amazonwebservices-plain-wordmark colored",
+    name:"Amazon Web Services",
+    text:""
   }
 ]
 
@@ -163,6 +168,31 @@ const Backpack = () => {
             Tools & Others
           </h1>
           <Icon data={tools}/>
+
+          <ul className="h-auto" >
+            <li
+              className="my-4 py-2 h-34"
+
+              data-aos="fade-up"
+              data-aos-duration="400"
+            >
+              <div className="inline-flex">
+                <div className="self-center align-middle text-6xl md:text-7xl">
+                  <StaticImage
+                    className="flex flex-row object-contain w-16 h-16 mr-4 xl:mr-5 pr-4"
+                    src="../images/postman-icon.png"
+                    alt="postman icon"
+                  />
+                </div>
+                <div className="ml-2">
+                  <h1 className="font-semibold text-2xl" style={{color:"rgb(46,196,182)"}}>Postman
+                  </h1>
+                  <p className="text-lg pr-2">Mainly use for API testing.</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+
         </div>
       </div>
 
