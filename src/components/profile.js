@@ -19,6 +19,7 @@ const icons = [
   },
   {
     id: "gmail",
+    icon: <StaticImage className="h-14 w-14  mr-3" alt="gmail_link" src="../images/gmail.png"/>,
     profile: `mailto:namansingh0305@gmail.com`,
 
   },
