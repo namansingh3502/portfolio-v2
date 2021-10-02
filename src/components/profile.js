@@ -73,6 +73,7 @@ export default function Profile (){
               <h1>
                 Hello there
               </h1>
+              <img className="flex flex-row object-contain place-self-center mx-4 h-7 md:h-9 lg:h-12 xl:h-16" src={hand} alt="waving hand"/>
               <h1>,</h1>
             </div>
             <div className="flex flex-row mt-5">
