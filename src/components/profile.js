@@ -46,8 +46,6 @@ const LinkButton = () => {
 }
 
 export default function Profile (){
-  const hand = "https://raw.githubusercontent.com/aemmadi/aemmadi/master/wave.gif";
-
   return(
     <section className="min-h-screen flex place-self-center">
       <div className="grid grid-cols-6 md:gap-5 lg:gap-12 text-white">
@@ -73,7 +71,7 @@ export default function Profile (){
               <h1>
                 Hello there
               </h1>
-              <img className="flex flex-row object-contain place-self-center mx-4 h-7 md:h-9 lg:h-12 xl:h-16" src={hand} alt="waving hand"/>
+              <span className="wave text-6xl ml-2">👋</span>
               <h1>,</h1>
             </div>
             <div className="flex flex-row mt-5">
