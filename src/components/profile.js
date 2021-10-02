@@ -4,32 +4,27 @@ import {StaticImage} from "gatsby-plugin-image";
 const icons = [
   {
     id: "github",
-    icon: `https://img.shields.io/badge/-black?style=flat-square&logo=github&logoColor=white`,
-    profile: `https://github.com/namansingh3502/`,
-    tag: "github_link"
+    icon: <StaticImage className="h-12 w-12 mr-3 bg-white rounded" alt="github_link" src="../images/github.png"/>,
+    profile: `https://github.com/namansingh3502/`
   },
   {
     id: "linkedin",
-    icon: `https://img.shields.io/badge/-blue?style=flat-square&logo=Linkedin&logoColor=white`,
+    icon: <StaticImage className="h-12 w-12 mr-3" alt="linkedin_link" src="../images/linkedin.png"/>,
     profile: `https://www.linkedin.com/in/naman-singh-215b2119b/`,
-    tag: "linkedin_link"
   },
   {
     id: "instagram",
-    icon: `https://img.shields.io/badge/-purple?style=flat-square&logo=instagram&logoColor=white`,
+    icon: <StaticImage className="h-12 w-12 mr-3" alt="instagram_link" src="../images/instagram.png"/>,
     profile: `https://www.instagram.com/naman.singh_35/`,
-    tag: "instagram_link"
   },
   {
     id: "gmail",
-    icon: `https://img.shields.io/badge/-c14438?style=flat-square&logo=Gmail&logoColor=white`,
     profile: `mailto:namansingh0305@gmail.com`,
-    tag: "gmail_link"
+
   },
 ]
 
 const LinkButton = () => {
-
   return (
     <>
       {icons.map((item ) => {
@@ -40,7 +35,7 @@ const LinkButton = () => {
             data-aos-delay="200"
             data-aos-duraion="800"
           >
-            <img className="h-10 align-middle mr-6" src={item.icon} alt={item.tag} />
+            {item.icon}
           </a>
         )
       }
